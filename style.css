@@ -1,0 +1,31 @@
+body{
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.h1{
+  font-weight: bold;
+  margin: 10px;
+}
+.move-icon{
+  height: 50px;
+}
+
+.move-button{
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.resetButton{
+  font-size: large;
+  font-weight: bold;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 10px;
+}
