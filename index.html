@@ -3,21 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rock Paper Scissor Game</title>
+  <title>Game</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="h1">Rock Paper Scissors</h1>
-  <button class="move-button"  onclick="Picked('rock')"><img class="move-icon"  src="/images/rock-emoji.png"></button>
-  <button class="move-button"  onclick="Picked('paper')"><img class="move-icon"  src="/images/paper-emoji.png"></button>
-  <button class="move-button"  onclick="Picked('scissors')"><img class="move-icon" src="/images/scissors-emoji.png"></button>
+  <h1>Rock Paper Scissors  </h1>
+  <button class="icon-button" onclick="finalAns('rock')"><img src="images/rock-emoji.png" alt="rock" class="move-button"></button>
+  <button class="icon-button" onclick="finalAns('paper');"><img src="images/paper-emoji.png" alt="rock" class="move-button"></button>
+  <button class="icon-button" onclick="finalAns('scissors');"><img src="images/scissors-emoji.png" alt="rock" class="move-button"></button>
 
-  <!-- we have scroe card then  -->
+  <p class="resultWithChoice textResult "></p> 
 
-   <p class="js-choice"></p>   
-   <p class="js-score"></p>
-   <button class="resetButton" onclick="resetScore()">Reset</button>
-
-   <script src="script.js"></script>
+  <p class="finalResult scroeCard" ></p>
+  <button class="reset-button reset-button-css" onclick="
+    score.Wins=0;
+    score.losses=0;
+    score.ties=0;
+    localStorage.removeItem('score');
+document.querySelector('.finalResult').innerText=`Wins:${score.Wins} , Losses:${score.losses} , Ties:${score.ties}`;
+  ">
+        RESET
+  </button>
+  <button class="js-auto-play Auto-button-css" onclick="autoplay()">AUTO PLAY</button>
+ <script src="script.js"></script> 
 </body>
-</html>`
+</html>

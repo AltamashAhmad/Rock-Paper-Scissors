@@ -1,31 +1,60 @@
 body{
   background-color: black;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 15px;
 }
-
-.h1{
-  font-weight: bold;
-  margin: 10px;
-}
-.move-icon{
-  height: 50px;
+.reset-button{
+  padding: 8px 30px;
 }
 
 .move-button{
+  height: 50px;
+}
+
+.icon-button{
   background-color: transparent;
   border: 1px solid white;
-  padding: 20px;
-  margin: 15px;
-  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 60px;
+  margin: 10px;
   cursor: pointer;
 }
 
-.resetButton{
-  font-size: large;
+.textResult{
+  font-size: medium;
   font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+
+.scroeCard{
+  margin-left: 15px;
+
+}
+.reset-button-css{
+  font-size: medium;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-left: 50px;
+  border: 1px solid white;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.Auto-button-css{
+  font-size: medium;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-left: 50px;
+  border: 1px solid white;
   padding: 10px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 10px;
 }
